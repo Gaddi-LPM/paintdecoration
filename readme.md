@@ -7,7 +7,7 @@ Trata sobre las diferentes formas de decorar los distintos ambientes tanto exter
 
 ## Demostracion
 
-Visita el sitio en el [link]( https://gaddi-lpm.github.io/proyectoMax/) 
+Visita el sitio en el [link]( https://gaddi-lpm.github.io/paintdecoration/) 
 
 ## Usage
 

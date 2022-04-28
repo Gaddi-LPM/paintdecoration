@@ -146,6 +146,12 @@ body {
    margin: 10px;
 }
 
+
+.contenedor .aside img {
+   width: 40px;
+   margin: 10px;
+}
+
 .contenedor .slider {
    grid-area: slider;
    width: 80%;
@@ -160,6 +166,7 @@ body {
    justify-content: center;
   margin-top: 250px;
 }
+
 @keyframes slider {
 
    25% { background: url(/imagenes/imagen2.jpg);}
@@ -171,6 +178,7 @@ body {
    100% { background: url(/imagenes/imagen5.jpg);}
 
 }
+
 .contenedor .footer {
    grid-area: footer;
    width: 100%;
@@ -206,6 +214,7 @@ body {
                             "menu"
                             "section"
                             "aside"
+                            "slider"
                             "footer";
    }
    .contenedor .aside{

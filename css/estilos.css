@@ -169,13 +169,13 @@ body {
 
 @keyframes slider {
 
-   25% { background: url(/imagenes/imagen2.jpg);}
+   25% { background: url(../imagenes/imagen2.jpg);}
 
-   50% { background: url(/imagenes/imagen3.jpg);}
+   50% { background: url(../imagenes/imagen3.jpg);}
 
-   75% { background: url(/imagenes/imagen4.jpg);}
+   75% { background: url(../imagenes/imagen4.jpg);}
 
-   100% { background: url(/imagenes/imagen5.jpg);}
+   100% { background: url(../imagenes/imagen5.jpg);}
 
 }
 

@@ -20,7 +20,7 @@ body {
                         "menu menu menu menu"
                         "section section section aside"
                         "section section section aside"
-                        "slider slider slider slider"
+                        "carrusel carrusel carrusel carrusel"
                         "footer footer footer footer";
 }                        
 .contenedor .header {
@@ -144,32 +144,14 @@ body {
    width: 40px;
    margin: 10px;
 }
-
-.contenedor .slider {
-   grid-area: slider;
-   width: 80%;
-   height: 500px;
+.contenedor .carrusel {
+   grid-area: carrusel;
+   width: 90%;
    margin: auto;
    margin-top: 15px;
-   background: url(/imagenes/imagen5.jpg);
-   animation: slider 20s infinite ease;
+   object-fit: cover;
 }
-.contenedor .slider h2 {
-   display: flex;
-   justify-content: center;
-  margin-top: 250px;
-}
-@keyframes slider {
 
-   25% { background: url(/imagenes/imagen2.jpg);}
-
-   50% { background: url(/imagenes/imagen3.jpg);}
-
-   75% { background: url(/imagenes/imagen4.jpg);}
-
-   100% { background: url(/imagenes/imagen5.jpg);}
-
-}
 .contenedor .footer {
    grid-area: footer;
    width: 100%;
@@ -205,6 +187,7 @@ body {
                             "menu"
                             "section"
                             "aside"
+                            "carrusel"
                             "footer";
    }
    .contenedor .aside{

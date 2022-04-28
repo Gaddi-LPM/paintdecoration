@@ -62,7 +62,7 @@ body {
     justify-content: center;
     align-items: center;
     grid-area: section;
-    background-image: url(/Imagenes/articulo3.jpg);
+    background-image: url(../imagenes/articulo3.jpg);
     background-repeat: repeat;
     background-position: center;
 }

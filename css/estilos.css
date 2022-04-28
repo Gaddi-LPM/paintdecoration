@@ -27,7 +27,7 @@ body {
    grid-area: header;
    width: auto;
    height: 150px;
-   background-image: url(/Imagenes/terracota.jpg);
+   background-image: url(../Imagenes/terracota.jpg);
    opacity: 0.8;
    background-repeat: repeat;
    background-size:contain;
@@ -158,7 +158,7 @@ body {
    height: 500px;
    margin: auto;
    margin-top: 15px;
-   background: url(imagenes/imagen5.jpg);
+   background: url(../imagenes/imagen5.jpg);
    animation: slider 20s infinite alternate-reverse;
 }
 .contenedor .slider h2 {

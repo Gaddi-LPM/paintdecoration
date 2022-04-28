@@ -25,7 +25,7 @@ body {
    grid-area: header;
    width: auto;
    height: 150px;
-   background-image: url(Imagenes/terracota.jpg);
+   background-image: url(../imagenes/terracota.jpg);
    opacity: 0.8;
    background-repeat: repeat;
    background-size:contain;

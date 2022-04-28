@@ -158,7 +158,7 @@ body {
    height: 500px;
    margin: auto;
    margin-top: 15px;
-   background: url(/imagenes/imagen5.jpg);
+   background: url(imagenes/imagen5.jpg);
    animation: slider 20s infinite alternate-reverse;
 }
 .contenedor .slider h2 {

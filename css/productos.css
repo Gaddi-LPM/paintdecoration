@@ -69,10 +69,11 @@ body {
    justify-content: center;
 }
 .contenedor .section img {
-   width: 15%;
+   width: 100%;
    margin-top: 10px;
    margin-left: 10px;
    object-fit: cover;
+   border-radius: 5px;
 }
 .section .imagen__prod {
    width: 95%;
@@ -85,7 +86,6 @@ body {
    margin: 10px;
    text-align: justify;
 }
-
 .imagen {
    width: 100%;
    display: flex;
@@ -93,17 +93,16 @@ body {
    align-items: center;
    justify-content: center;
 }
-.imagen:hover {
-   border: 3px solid rgb(25, 25, 26);
-   background-color: rgb(195, 240, 255,0.4);
-   transition: ease 0.9s;
-   border-radius: 5px;
+
+.contenedor .card:hover {
+   padding: 10px;
+   transition: 0.4s;
+   background-color: rgb(25, 25, 26);
+   color: whitesmoke;
 }
-.contenedor .imagen:hover img {
+.contenedor .card:hover img {
    opacity: 1;
-}
-.contenedor .imagen:hover p {
-   display: block;
+   transform: scale(1.2);
 }
 
 /* titulo articulo */

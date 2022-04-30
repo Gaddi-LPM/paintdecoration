@@ -101,8 +101,18 @@ body {
    color: whitesmoke;
 }
 .contenedor .card:hover img {
+   transform: scale(1.3);
    opacity: 1;
-   transform: scale(1.2);
+}
+.offcanvas-body {
+   color: black;
+   text-align: justify;
+}
+.btn {
+   margin-top: 10px;
+}
+.offcanvas-header {
+   color: black;
 }
 
 /* titulo articulo */

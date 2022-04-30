@@ -62,10 +62,8 @@ body {
     justify-content: center;
     align-items: center;
     grid-area: section;
-    background-image: url(../imagenes/articulo3.jpg);
     background-repeat: repeat;
     background-position: center;
-    opacity: calc(0.5);
 }
 
 .formulario {
@@ -77,6 +75,7 @@ body {
 .form__legend {
 
     font-size: 25px;
+   color:whitesmoke;
 }
 
 .formulario__contenido {
@@ -85,7 +84,9 @@ body {
     flex-direction: column;
     border: 5px solid white;
     margin-top: 20px;
-   
+    background-image: url(../imagenes/articulo3.jpg);
+    color:black;
+    font: 800;
 }
 
 .form__label {
@@ -95,7 +96,6 @@ body {
    justify-content: center;
    font-size: 25px;
    margin: 20px;
-
 }
 
 .form__input {

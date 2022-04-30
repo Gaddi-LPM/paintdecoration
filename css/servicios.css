@@ -138,18 +138,21 @@ body {
    width: 100%;
    height: 200px;
    border-radius: 5px;
+   object-fit: cover;
 }
 
 .service2 .imagen img {
    width: 100%;
    height: 200px;
    border-radius: 5px;
+   object-fit: cover;
 }
 
 .service3 .imagen img {
    width: 100%;
    height: 200px;
    border-radius: 5px;
+   object-fit: cover;
 }
 
 .imagen h3 {

@@ -16,6 +16,7 @@ body {
                         "carrusel carrusel carrusel carrusel"
                         "footer footer footer footer";
 }
+
 .contenedor .header {
     grid-area: header;
     width: auto;
@@ -31,43 +32,46 @@ body {
     font-size: 20px;
     text-transform: uppercase;
  }
+
  .contenedor .menu {
     grid-area: menu;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(25, 25, 26);
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: whitesmoke;
+        margin: 15px;
+    }
  }
- .contenedor .menu a {
- 
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
-    color: whitesmoke;
-    margin: 15px;
- }
+
  .menu a:hover {
     background-color: #E2725B;
     padding: 5px;
     transition: 0.5s;
  }
+
  .contenedor .section {
     width: 100%;
     height: 100%;
     grid-area: section;
     display: flex;
     justify-content: space-around;
+    img {
+        width: 95%;
+        height: 300px;
+        margin-top: 20px;
+        border-radius: 5px;
+        display: flex;
+        justify-content:center;
+        object-fit: cover;
+        opacity: 1;
+    }
  }
- .contenedor .section img {
-    width: 95%;
-    height: 300px;
-    margin-top: 20px;
-    border-radius: 5px;
-    display: flex;
-    justify-content:center;
-    object-fit: cover;
-    opacity: 1;
- }
+ 
  .imagen {
     width: 100%;
     position: relative;
@@ -76,27 +80,26 @@ body {
     flex-direction:column;
     align-items: center;
     justify-content: center;
+    p {
+        display: flex;
+        text-align:justify;
+        align-items: center;
+        left: 250px;
+        padding: 5px;
+        margin: 10px;
+        color: white;
+        position: absolute;
+    }
+    a {
+        text-decoration: none;
+        border: 2px solid whitesmoke;
+        color: whitesmoke;
+        padding: 3px;
+        position: absolute;
+        margin-top: 350px;
+    }
  }
  
- .imagen p {
-    display: flex;
-    text-align:justify;
-    align-items: center;
-    left: 250px;
-    padding: 5px;
-    margin: 10px;
-    color: white;
-    position: absolute;
- }
- .imagen a {
-    text-decoration: none;
-    border: 2px solid whitesmoke;
-    color: whitesmoke;
-    padding: 3px;
-    position: absolute;
-    margin-top: 350px;
-    
- }
  .imagen:hover img {
     opacity: 0.5;
  }
@@ -125,18 +128,19 @@ body {
     border-radius: 5px;
     background-color: rgb(25, 25, 26);
     color: whitesmoke;
+    h2 {
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+    p {
+        text-align: center;
+    }
+    img {
+        width: 40px;
+        margin: 10px;
+    }
  }
- .contenedor .aside h2 {
-    margin-bottom: 30px;
-    font-size: 25px;
- }
- .contenedor .aside p {
-    text-align: center;
- }
- .contenedor .aside img {
-    width: 40px;
-    margin: 10px;
- }
+
  .contenedor .carrusel {
     grid-area: carrusel;
     width: 90%;
@@ -144,6 +148,7 @@ body {
     margin-top: 15px;
     object-fit: cover;
  }
+
  .contenedor .footer {
     grid-area: footer;
     width: 100%;
@@ -154,26 +159,26 @@ body {
     align-items: center;
     background-color: rgb(25, 25, 26);
     color:whitesmoke;
- }
- .footer .iconos {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
- .footer .iconos img {
-    width: 40px;
-    margin: 20px;
- }
- .footer .androide img {
-    width: 30px;
-    display: flex;
- }
- .footer h2 {
-    margin: 20px;
- }
- 
- @media (max-width:165px){
+    .iconos {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 40px;
+            margin: 20px;
+        }
+    }
+    .androide img {
+        width: 30px;
+        display: flex;
+    }
+    h2 {
+        margin: 20px;
+    }
+ }  
+
+ @media (max-width:368px){
     .contenedor {
        grid-template-areas: "header"
                              "menu"

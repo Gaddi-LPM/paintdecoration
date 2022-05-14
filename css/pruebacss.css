@@ -1,3 +1,583 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: grey;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.contenedor__productos {
+  width: 85vw;
+  height: auto;
+  margin: auto;
+  display: grid;
+  background-color: #E2725B;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "header header header header" "menu menu menu menu" "section section section section" "prod prod prod prod" "article article article article" "prod2 prod2 prod2 prod2" "article2 article2 article2 article2" "footer footer footer footer"; }
+
+.contenedor__productos .header {
+  grid-area: header;
+  width: auto;
+  height: 150px;
+  background-image: url(../imagenes/terracota.jpg);
+  opacity: 0.8;
+  background-repeat: repeat;
+  background-size: contain;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-transform: uppercase; }
+
+.contenedor__productos .menu {
+  grid-area: menu;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #19191a; }
+
+.contenedor__productos .menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: whitesmoke;
+  margin: 15px; }
+
+.menu a:hover {
+  background-color: #E2725B;
+  padding: 5px;
+  transition: 0.5s; }
+
+.contenedor__productos .section {
+  width: 100%;
+  grid-area: section;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.contenedor__productos .section img {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 10px;
+  object-fit: cover;
+  border-radius: 5px; }
+
+.section .imagen__prod {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.contenedor__productos .imagen__prod P {
+  font-size: 17px;
+  margin: 10px;
+  text-align: justify; }
+
+.imagen {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.contenedor__productos .card:hover {
+  padding: 10px;
+  transition: 0.4s;
+  background-color: #19191a;
+  color: whitesmoke; }
+
+.contenedor__productos .card:hover img {
+  transform: scale(1.3);
+  opacity: 1; }
+
+.offcanvas-body {
+  color: black;
+  text-align: justify; }
+
+.btn {
+  margin-top: 10px; }
+
+.offcanvas-header {
+  color: black; }
+
+/* titulo articulo */
+.contenedor__productos .productos {
+  grid-area: prod;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #19191a;
+  border: 1PX solid whitesmoke; }
+
+.contenedor__productos .productos2 {
+  grid-area: prod2;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #19191a;
+  border: 1PX solid whitesmoke; }
+
+.contenedor__productos .productos h2 {
+  font-size: 25px;
+  color: whitesmoke; }
+
+.contenedor__productos .productos2 h2 {
+  font-size: 25px;
+  color: whitesmoke; }
+
+.contenedor__productos .article {
+  grid-area: article;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.contenedor__productos .article2 {
+  grid-area: article2;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.contenedor__productos .article img {
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+  opacity: 0.5; }
+
+.contenedor__productos .article2 img {
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+  opacity: 0.5; }
+
+.article .imagen p {
+  display: none;
+  font-size: 17px;
+  margin-top: 20px;
+  text-align: center; }
+
+.article2 .imagen p {
+  display: none;
+  font-size: 17px;
+  margin-top: 20px;
+  text-align: center; }
+
+.contenedor__productos .footer {
+  grid-area: footer;
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #19191a;
+  color: whitesmoke; }
+
+.footer .iconos {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer .iconos img {
+  width: 40px;
+  margin: 20px; }
+
+.footer .androide img {
+  width: 30px;
+  display: flex; }
+
+.footer h2 {
+  margin: 20px; }
+
+@media (max-width: 368px) {
+  .contenedor__productos {
+    grid-template-areas: "header" "menu" "section" "prod" "article" "prod2" "article2" "footer"; }
+  .section .imagen__prod {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .contenedor__productos .section img {
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 10px;
+    object-fit: cover; }
+  .footer h2 {
+    margin: 10px;
+    font-size: 15px;
+    text-align: center; }
+  .footer .androide img {
+    display: none; }
+  .copy {
+    text-align: center; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: grey;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.contenedor__servicios {
+  width: 85vw;
+  height: auto;
+  margin: auto;
+  display: grid;
+  background-color: #E2725B;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(8/1fr);
+  grid-template-areas: "header header header header" "menu menu menu menu" "section section section section" "prod prod prod prod" "service service service service" "service2 service2 service2 service2" "service3 service3 service3 service3" "footer footer footer footer"; }
+
+.contenedor__servicios .header {
+  grid-area: header;
+  width: auto;
+  height: 150px;
+  background-image: url(../imagenes/terracota.jpg);
+  opacity: 0.8;
+  background-repeat: repeat;
+  background-size: contain;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-transform: uppercase; }
+
+.contenedor__servicios .menu {
+  grid-area: menu;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #19191a; }
+
+.contenedor__servicios .menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: whitesmoke;
+  margin: 15px; }
+
+.menu a:hover {
+  background-color: #E2725B;
+  padding: 5px;
+  transition: 0.5s; }
+
+.contenedor__servicios .section {
+  width: 100%;
+  grid-area: section;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.section .imagen__prod {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.contenedor__servicios .imagen__prod P {
+  font-size: 17px;
+  margin: 10px;
+  text-align: justify; }
+
+/* contenedor de los servicios */
+.contenedor__servicios .service {
+  grid-area: service;
+  width: 100%;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  perspective: 800px; }
+
+.contenedor__servicios .service2 {
+  grid-area: service2;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  perspective: 800px; }
+
+.contenedor__servicios .service3 {
+  grid-area: service3;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  perspective: 800px; }
+
+.imagen__3d {
+  width: 95%;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 2s; }
+
+.imagen__3d:hover {
+  transform: rotateX(180deg); }
+
+.lado {
+  width: 85%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute; }
+
+.atras {
+  transform: rotateX(180deg);
+  background-color: #19191a;
+  border-radius: 5px; }
+
+.service .imagen__3d img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover; }
+
+.service2 .imagen__3d img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover; }
+
+.service3 .imagen__3d img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover; }
+
+.imagen__3d h3 {
+  font-size: 25px;
+  margin-bottom: 100px;
+  position: absolute;
+  color: whitesmoke; }
+
+.imagen__3d p {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: justify;
+  font-weight: 800;
+  color: whitesmoke; }
+
+/* titulo servicios */
+.contenedor__servicios .productos {
+  grid-area: prod;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #19191a;
+  border: 1PX solid whitesmoke; }
+
+.contenedor__servicios .productos h2 {
+  font-size: 25px;
+  color: whitesmoke; }
+
+.contenedor__servicios .footer {
+  grid-area: footer;
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #19191a;
+  color: whitesmoke; }
+
+.footer .iconos {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer .iconos img {
+  width: 40px;
+  margin: 20px; }
+
+.footer .androide img {
+  width: 30px;
+  display: flex; }
+
+.footer h2 {
+  margin: 20px; }
+
+@media (max-width: 368px) {
+  .contenedor__servicios {
+    grid-template-areas: "header" "menu" "section" "prod" "service" "service2" "service3" "footer"; }
+  .footer h2 {
+    margin: 10px;
+    font-size: 15px;
+    text-align: center; }
+  .footer .androide img {
+    display: none; }
+  .copy {
+    text-align: center; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: grey;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.contenedor__contacto {
+  width: 85vw;
+  height: auto;
+  margin: auto;
+  display: grid;
+  background-color: #E2725B;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "header header header header" "menu menu menu menu" "section section section section" "footer footer footer footer"; }
+
+.contenedor__contacto .header {
+  grid-area: header;
+  width: auto;
+  height: 150px;
+  background-image: url(../imagenes/terracota.jpg);
+  opacity: 0.8;
+  background-repeat: repeat;
+  background-size: contain;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-transform: uppercase; }
+
+.contenedor__contacto .menu {
+  grid-area: menu;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #19191a; }
+
+.contenedor__contacto .menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: whitesmoke;
+  margin: 15px; }
+
+.menu a:hover {
+  background-color: #E2725B;
+  padding: 5px;
+  transition: 0.5s; }
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: section;
+  background-repeat: repeat;
+  background-position: center; }
+
+.formulario {
+  display: flex;
+  justify-content: center; }
+
+.form__legend {
+  font-size: 25px;
+  color: whitesmoke; }
+
+.formulario__contenido {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid white;
+  margin-top: 20px;
+  background-image: url(../imagenes/articulo3.jpg);
+  color: black;
+  font: 800; }
+
+.form__label {
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+  margin: 20px; }
+
+.form__input {
+  width: 600px;
+  height: 40px;
+  font-size: 20px; }
+
+.form__area {
+  height: 200px;
+  font-size: 20px; }
+
+.form__boton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; }
+
+.form__boton input {
+  margin-top: 5px;
+  border: outset; }
+
+.contenedor__contacto .footer {
+  grid-area: footer;
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #19191a;
+  color: whitesmoke; }
+
+.footer .iconos {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer .iconos img {
+  width: 40px;
+  margin: 20px; }
+
+.footer .androide img {
+  width: 30px;
+  display: flex; }
+
+.footer h2 {
+  margin: 20px; }
+
+@media (max-width: 165px) {
+  .contenedor__contacto {
+    grid-template-areas: "header" "menu" "section" "footer"; }
+  .footer h2 {
+    margin: 10px;
+    font-size: 15px;
+    text-align: center; }
+  .footer .androide img {
+    display: none; }
+  .copy {
+    text-align: center; } }
+
 body {
   background-color: grey;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }

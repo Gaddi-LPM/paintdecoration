@@ -106,7 +106,7 @@ body {
    align-items: center;
    perspective: 800px;
 }
-.imagen {
+.imagen__3d {
    width: 95%;
    height: 250px;
    display: flex;
@@ -119,7 +119,7 @@ body {
    transform-style: preserve-3d;
    transition: 2s;
 }
-.imagen:hover {
+.imagen__3d:hover {
    transform: rotateX(180deg);
 }
 
@@ -134,34 +134,34 @@ body {
    background-color: rgb(25, 25, 26);
    border-radius: 5px; 
 }
-.service .imagen img {
+.service .imagen__3d img {
    width: 100%;
    height: 200px;
    border-radius: 5px;
    object-fit: cover;
 }
 
-.service2 .imagen img {
+.service2 .imagen__3d img {
    width: 100%;
    height: 200px;
    border-radius: 5px;
    object-fit: cover;
 }
 
-.service3 .imagen img {
+.service3 .imagen__3d img {
    width: 100%;
    height: 200px;
    border-radius: 5px;
    object-fit: cover;
 }
 
-.imagen h3 {
+.imagen__3d h3 {
    font-size: 25px;
    margin-bottom: 100px;
    position: absolute;
    color: whitesmoke;
 }
-.imagen p {
+.imagen__3d p {
    margin-top: 20px;
    padding: 20px;
    text-align: justify;

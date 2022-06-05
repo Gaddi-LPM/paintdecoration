@@ -198,9 +198,18 @@ body {
   width: 40px;
   margin: 20px; }
 
-.footer .androide img {
-  width: 30px;
-  display: flex; }
+.map__footer {
+  display: flex;
+  font-size: 15px;
+  text-transform: capitalize; }
+
+.map__footer a {
+  color: whitesmoke;
+  margin: 5px;
+  text-decoration: none; }
+
+.map__footer a:hover {
+  color: #e2725b; }
 
 .footer h2 {
   margin: 20px; }
@@ -415,6 +424,19 @@ body {
   width: 40px;
   margin: 20px; }
 
+.map__footer {
+  display: flex;
+  font-size: 15px;
+  text-transform: capitalize; }
+
+.map__footer a {
+  color: whitesmoke;
+  margin: 5px;
+  text-decoration: none; }
+
+.map__footer a:hover {
+  color: #e2725b; }
+
 .footer .iconos:hover img {
   transform: scale(1.1);
   transition: 0.50s; }
@@ -561,6 +583,19 @@ body {
 .footer .iconos img {
   width: 40px;
   margin: 20px; }
+
+.map__footer {
+  display: flex;
+  font-size: 15px;
+  text-transform: capitalize; }
+
+.map__footer a {
+  color: whitesmoke;
+  margin: 5px;
+  text-decoration: none; }
+
+.map__footer a:hover {
+  color: #e2725b; }
 
 .footer .iconos:hover img {
   transform: scale(1.1);
@@ -739,6 +774,16 @@ body {
     .contenedor .footer .iconos:hover img {
       transform: scale(1.1);
       transition: 0.50s; }
+  .contenedor .footer .map__footer {
+    display: flex;
+    font-size: 15px;
+    text-transform: capitalize; }
+    .contenedor .footer .map__footer a {
+      color: whitesmoke;
+      margin: 5px;
+      text-decoration: none; }
+    .contenedor .footer .map__footer a:hover {
+      color: #e2725b; }
   .contenedor .footer .androide img {
     width: 30px;
     display: flex; }

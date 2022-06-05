@@ -206,6 +206,19 @@ body {
    width: 40px;
    margin: 20px;
 }
+.map__footer {
+   display: flex;
+   font-size: 15px;
+   text-transform:capitalize;
+}
+.map__footer a {
+   color: whitesmoke;
+   margin: 5px;
+   text-decoration: none;
+}
+.map__footer a:hover {
+   color: #e2725b;
+}
 .footer .iconos:hover img {
    transform: scale(1.1);
    transition: 0.50s;

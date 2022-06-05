@@ -180,7 +180,20 @@ body {
       &:hover img {
          transform: scale(1.1);
          transition: 0.50s;
-      }  
+      } 
+    }
+    .map__footer {
+       display: flex;
+       font-size: 15px;
+       text-transform:capitalize;
+       a {
+          color: whitesmoke;
+          margin: 5px;
+          text-decoration: none;
+       }
+       a:hover {
+          color: #e2725b;
+       }
     }
     .androide img {
         width: 30px;

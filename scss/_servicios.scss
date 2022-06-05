@@ -16,7 +16,6 @@ body {
    display: grid;
    background-color: #E2725B;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: repeat(8 / 1fr);
    grid-template-areas: "header header header header"
                         "menu menu menu menu"
                         "section section section section"
@@ -207,6 +206,10 @@ body {
    width: 40px;
    margin: 20px;
 }
+.footer .iconos:hover img {
+   transform: scale(1.1);
+   transition: 0.50s;
+}  
 .footer .androide img {
    width: 30px;
    display: flex;

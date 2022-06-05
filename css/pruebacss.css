@@ -244,7 +244,6 @@ body {
   display: grid;
   background-color: #E2725B;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(8/1fr);
   grid-template-areas: "header header header header" "menu menu menu menu" "section section section section" "prod prod prod prod" "service service service service" "service2 service2 service2 service2" "service3 service3 service3 service3" "footer footer footer footer"; }
 
 .contenedor__servicios .header {
@@ -416,6 +415,10 @@ body {
   width: 40px;
   margin: 20px; }
 
+.footer .iconos:hover img {
+  transform: scale(1.1);
+  transition: 0.50s; }
+
 .footer .androide img {
   width: 30px;
   display: flex; }
@@ -559,6 +562,10 @@ body {
   width: 40px;
   margin: 20px; }
 
+.footer .iconos:hover img {
+  transform: scale(1.1);
+  transition: 0.50s; }
+
 .footer .androide img {
   width: 30px;
   display: flex; }
@@ -566,7 +573,7 @@ body {
 .footer h2 {
   margin: 20px; }
 
-@media (max-width: 165px) {
+@media (max-width: 368px) {
   .contenedor__contacto {
     grid-template-areas: "header" "menu" "section" "footer"; }
   .footer h2 {
@@ -700,6 +707,9 @@ body {
   .contenedor .aside img {
     width: 40px;
     margin: 10px; }
+  .contenedor .aside:hover img {
+    transform: rotateY(360deg);
+    transition: 1s; }
 
 .contenedor .carrusel {
   grid-area: carrusel;
@@ -726,6 +736,9 @@ body {
     .contenedor .footer .iconos img {
       width: 40px;
       margin: 20px; }
+    .contenedor .footer .iconos:hover img {
+      transform: scale(1.1);
+      transition: 0.50s; }
   .contenedor .footer .androide img {
     width: 30px;
     display: flex; }

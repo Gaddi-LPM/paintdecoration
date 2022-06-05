@@ -144,6 +144,10 @@ body {
         width: 40px;
         margin: 10px;
     }
+   &:hover img{
+      transform: rotateY(360deg);
+      transition: 1s;
+   } 
  }
 
  .contenedor .carrusel {
@@ -173,6 +177,10 @@ body {
             width: 40px;
             margin: 20px;
         }
+      &:hover img {
+         transform: scale(1.1);
+         transition: 0.50s;
+      }  
     }
     .androide img {
         width: 30px;

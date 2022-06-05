@@ -153,7 +153,7 @@ body {
    margin: 20px;
 }
 
-@media (max-width:165px){
+@media (max-width:368px){
    .contenedor__contacto {
       grid-template-areas: "header"
                             "menu"

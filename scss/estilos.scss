@@ -204,6 +204,34 @@ body {
     }
  }  
 
+ @media (max-width:768px){
+   .contenedor {
+      grid-template-areas: "header"
+                            "menu"
+                            "section"
+                            "aside"
+                            "carrusel"
+                            "footer";
+   }
+   .contenedor .aside{
+      width: 100%;
+      margin: auto;
+      text-align: center;
+   }
+   .footer h2 {
+      margin: 10px;
+      font-size: 15px;
+      text-align: center;
+   }
+   .footer .androide img {
+      display: none;
+   }
+   .copy {
+      text-align: center;
+   }
+
+}
+
  @media (max-width:368px){
     .contenedor {
        grid-template-areas: "header"

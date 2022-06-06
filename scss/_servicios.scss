@@ -230,6 +230,30 @@ body {
 .footer h2 {
    margin: 20px;
 }
+@media (max-width:768px){
+   .contenedor__servicios {
+      grid-template-areas: "header"
+                            "menu"
+                            "section"
+                            "prod"
+                            "service"
+                            "service2"
+                            "service3"
+                            "footer";
+   }
+   
+   .footer h2 {
+      margin: 10px;
+      font-size: 15px;
+      text-align: center;
+   }
+   .footer .androide img {
+      display: none;
+   }
+   .copy {
+      text-align: center;
+   }
+}
 
 @media (max-width:368px){
    .contenedor__servicios {

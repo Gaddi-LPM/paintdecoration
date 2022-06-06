@@ -169,6 +169,27 @@ body {
 .footer h2 {
    margin: 20px;
 }
+@media (max-width:768px){
+   .contenedor__contacto {
+      grid-template-areas: "header"
+                            "menu"
+                            "section"
+                            "footer"
+                            
+   }
+   
+   .footer h2 {
+      margin: 10px;
+      font-size: 15px;
+      text-align: center;
+   }
+   .footer .androide img {
+      display: none;
+   }
+   .copy {
+      text-align: center;
+   }
+}
 
 @media (max-width:368px){
    .contenedor__contacto {

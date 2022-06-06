@@ -93,7 +93,8 @@ body {
    justify-content: center;
 }
 
-.contenedor__productos .card:hover {
+.contenedor__productos .card {
+   margin: 10px;
    padding: 10px;
    transition: 0.4s;
    background-color: rgb(25, 25, 26);
@@ -108,7 +109,7 @@ body {
    text-align: justify;
 }
 .btn {
-   margin-top: 10px;
+   margin-top: 5px;
 }
 .offcanvas-header {
    color: black;
@@ -155,8 +156,6 @@ body {
     width: 100%;
     margin-top: 30px;
     display: flex;
-    align-items: center;
-    justify-content:space-around;
 }
 
 .contenedor__productos .article2 {
@@ -164,8 +163,6 @@ body {
    width: 100%;
    margin-top: 30px;
    display: flex;
-   align-items: center;
-   justify-content:space-around;
 }
 
 .contenedor__productos .article img {
